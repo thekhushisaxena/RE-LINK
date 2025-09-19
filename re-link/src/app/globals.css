@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #ffffff;
+  background-color: #ffffff;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,15 +21,19 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* Force white background regardless of system preference */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
   }
 }
 
 body {
-  background: var(--background);
+  background: #ffffff;
+  background-color: #ffffff;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
