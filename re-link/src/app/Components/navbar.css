@@ -8,13 +8,14 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 12px 24px;
+  padding: 8px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  height: 60px;
 }
 
 .navbar:hover {
@@ -43,7 +44,7 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -53,14 +54,28 @@
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 16px;
   transition: all 0.3s ease;
   position: relative;
 }
 
 .navbar-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  transform: translateY(-1px);
+}
+
+/* Scroll button styling to match navbar links */
+.navbar-scroll-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.navbar-scroll-btn:hover {
   background: rgba(255, 255, 255, 0.2);
   color: #000;
   transform: translateY(-1px);
@@ -76,9 +91,9 @@
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 16px;
   transition: all 0.3s ease;
   border: 1px solid rgba(51, 51, 51, 0.2);
   background: transparent;
@@ -95,12 +110,12 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 20px;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 16px;
   transition: all 0.3s ease;
   border: none;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 3px 12px rgba(102, 126, 234, 0.3);
   cursor: pointer;
 }
 
@@ -117,8 +132,8 @@
 }
 
 .navbar-auth .cl-avatarBox {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
@@ -132,52 +147,64 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 16px;
+    padding: 6px 14px;
+    height: 50px;
   }
   
   .navbar-logo {
-    width: 100px;
-    height: 32px;
+    width: 85px;
+    height: 28px;
   }
   
   .navbar-links {
-    gap: 8px;
+    gap: 6px;
   }
   
   .navbar-link,
   .btn-signin,
   .btn-signup {
     font-size: 12px;
-    padding: 6px 12px;
+    padding: 5px 10px;
   }
   
   .navbar-auth {
-    gap: 6px;
+    gap: 5px;
+  }
+  
+  .navbar-auth .cl-avatarBox {
+    width: 24px;
+    height: 24px;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 8px 12px;
+    padding: 5px 10px;
+    height: 45px;
   }
   
   .navbar-logo {
-    width: 80px;
-    height: 26px;
+    width: 70px;
+    height: 24px;
   }
   
   .navbar-links {
-    gap: 4px;
+    gap: 3px;
   }
   
   .navbar-link,
   .btn-signin,
   .btn-signup {
     font-size: 11px;
-    padding: 5px 10px;
+    padding: 4px 8px;
   }
   
   .navbar-auth {
-    gap: 4px;
+    gap: 3px;
+  }
+  
+  .navbar-auth .cl-avatarBox {
+    width: 22px;
+    height: 22px;
   }
 }

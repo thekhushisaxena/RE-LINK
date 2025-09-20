@@ -1,14 +1,17 @@
 import Image from "next/image";
 import HeroSection from "./Components/herosection";
 import CardSection from "./Components/cardsection";
+import StatsSection from "./Components/statssection";
+import AboutUs from "./Components/aboutus";
 
 export default function Home() {
   return (
     <div>
+      <main>
       <HeroSection />
       <CardSection />
-      <main>
-        Let's build a re-linking service!
+      <StatsSection />
+      <AboutUs />
       </main>
     </div>
   );

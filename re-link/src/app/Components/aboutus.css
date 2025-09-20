@@ -1,0 +1,153 @@
+/* About Us Section Styles */
+.about-us-section {
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(173, 216, 230, 0.5) 0%,    /* Light blue */
+    rgba(255, 222, 173, 0.5) 50%,   /* Light peach */
+    rgba(255, 182, 193, 0.5) 100%   /* Light pink */
+  );
+  min-height: 500px;
+}
+
+.about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  color: #151515;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  margin-bottom: 24px;
+}
+
+.section-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.features-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handshake-image {
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-us-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .about-us-section {
+    padding: 60px 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .features-list {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    padding: 40px 15px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-heading {
+    font-size: 1.2rem;
+  }
+  
+  .section-description,
+  .features-list li {
+    font-size: 0.95rem;
+  }
+  
+  .about-us-container {
+    gap: 30px;
+  }
+}

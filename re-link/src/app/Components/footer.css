@@ -1,0 +1,194 @@
+/* Footer Section Styles */
+.footer-section {
+  background: linear-gradient(135deg, #4a90a4 0%, #357a96 100%);
+  color: white;
+  padding: 60px 20px 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links li {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.office-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.office-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.office-info p strong {
+  color: white;
+  font-weight: 600;
+}
+
+/* Footer Branding Section */
+.footer-branding {
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.re-link-logo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.powered-by {
+  text-align: center;
+}
+
+.powered-by p {
+  margin: 2px 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.powered-by p:last-child {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.atu-logo {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.atu-logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Copyright Section */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 800px;
+  }
+  
+  .footer-section {
+    padding: 40px 20px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .footer-heading {
+    text-align: center;
+  }
+  
+  .footer-section {
+    padding: 30px 20px 20px;
+  }
+}
+
+/* Ensure footer sticks to bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
