@@ -2,6 +2,7 @@
 import React from 'react';
 import './navbar.css';
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   SignInButton,
   SignUpButton,
@@ -14,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Brand/Logo */}
-      <a href="/" className="navbar-brand">
+      <Link href="/" className="navbar-brand">
         <Image
           src="https://ik.imagekit.io/1s9qh4gz6/WHITE%20LOGO%202.png?updatedAt=1758301857083"
           alt="RE-LINK Logo"
@@ -23,19 +24,24 @@ const Navbar = () => {
           className="navbar-logo"
           priority
         />
-      </a>
+      </Link>
 
       {/* Navigation Links */}
       <ul className="navbar-links">
         <li>
-          <a href="/features" className="navbar-link">
+          <Link href="/features" className="navbar-link">
             Features
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/alumni" className="navbar-link">
+          <Link href="/alumni" className="navbar-link">
             Alumni
-          </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/profile" className="navbar-link">
+            My Profile
+          </Link>
         </li>
         <li>
           <button 

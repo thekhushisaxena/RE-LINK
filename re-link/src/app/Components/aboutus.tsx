@@ -9,7 +9,7 @@ const AboutUs = () => {
         {/* Left Content */}
         <div className="about-content">
           <h2 className="about-title">About US</h2>
-          <p className="about-subtitle">"Connecting Alumni, Empowering Futures."</p>
+          <p className="about-subtitle">&quot;Connecting Alumni, Empowering Futures.&quot;</p>
           
           <div className="about-text">
             <h3 className="section-heading">Who we are?</h3>
